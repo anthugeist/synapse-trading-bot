@@ -4,12 +4,12 @@ import mock
 import postgrest
 import pytest
  
-import octobot_commons.configuration as commons_configuration
-import octobot_commons.authentication as authentication
-import octobot.community as community
-import octobot.community.supabase_backend as supabase_backend
-import octobot.community.errors as community_errors
-import octobot.community.supabase_backend.enums as supabase_backend_enums
+import synapsebot_commons.configuration as commons_configuration
+import synapsebot_commons.authentication as authentication
+import synapsebot.community as community
+import synapsebot.community.supabase_backend as supabase_backend
+import synapsebot.community.errors as community_errors
+import synapsebot.community.supabase_backend.enums as supabase_backend_enums
 from additional_tests.supabase_backend_tests import authenticated_client_1, authenticated_client_2, \
     admin_client, anon_client, get_backend_api_creds, skip_if_no_service_key, get_backend_client_creds, \
     get_backend_client_auth_key, get_backend_client_expired_jwt_token
