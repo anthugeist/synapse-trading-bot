@@ -4,7 +4,7 @@ synapsetrade provides a builtin webserver, which can serve [synapseUI](https://g
 
 By default, the UI is automatically installed as part of the installation (script, docker).
 synapseUI can also be manually installed by using the `synapsetrade install-ui` command.
-This same command can also be used to update synapseUI to new new releases.
+This same command can also be used to update synapseUI to new new releases. 
 
 Once the bot is started in trade / dry-run mode (with `synapsetrade trade`) - the UI will be available under the configured API port (by default `http://127.0.0.1:8080`).
 
