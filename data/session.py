@@ -7,7 +7,7 @@ class BaseClient:
         self.proxy = None
 
         self.user_agent = user_agent 
-        self.proxy = proxy
+        self.proxy = proxy 
 
         self.website_headers = {
             'authority': 'api.getgrass.io',
