@@ -3,7 +3,7 @@ import time
 import mock
 import postgrest
 import pytest
-
+ 
 import octobot_commons.configuration as commons_configuration
 import octobot_commons.authentication as authentication
 import octobot.community as community
