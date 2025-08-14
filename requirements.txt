@@ -10,12 +10,11 @@ loguru
 fake-useragent==1.5.1
 pyrofork==2.3.61
 ccxt==4.4.94
-cryptography==45.0.5
 aiohttp==3.12.14
 SQLAlchemy==2.0.41
+pydantic
 pycoingecko==3.2.0
 requests==2.32.4
-pydantic
 uvicorn==0.35.0
 pyjwt==2.10.1
 cachetools==4.2.2
@@ -25,5 +24,3 @@ unicorn-fy==0.11.0
 schedule==1.1.0
 python-binance==1.0.27
 scikit-learn
-lightgbm
-tensorflow
