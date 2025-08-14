@@ -1,4 +1,4 @@
-import fs from 'fs';
+ import fs from 'fs';
 import path from 'path';
 import { logger, SNIPE_LIST_REFRESH_INTERVAL } from '../helpers';
 
