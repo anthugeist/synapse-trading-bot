@@ -6,7 +6,7 @@ from web3.exceptions import ContractLogicError
 from colorama import init, Fore, Style
 
 # Initialize colorama
-init(autoreset=True)
+init(autoreset=True) 
  
 # Constants
 RPC_URL = "https://testnet-rpc.monad.xyz/"
@@ -209,3 +209,4 @@ async def run():
 
 if __name__ == "__main__":
     asyncio.run(run())
+
