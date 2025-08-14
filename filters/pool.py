@@ -3,7 +3,7 @@ import time
 import pytest
 
 from additional_tests.historical_backend_tests import clickhouse_client
-import octobot.community.history_backend.clickhouse_historical_backend_client as clickhouse_historical_backend_client
+import octobot.community.history_backend.clickhouse_historical_backend_client as clickhouse_historical_backend_client 
 
 import octobot_commons.enums as commons_enums
 
