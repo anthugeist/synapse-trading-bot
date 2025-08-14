@@ -1,8 +1,7 @@
 import json
 import uuid
 import gc
-import sys
-import asyncio
+import sys 
 import time
 
 import synapsebot_commons.logging as commons_logging
