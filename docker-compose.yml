@@ -1,0 +1,43 @@
+services:
+  symapsebot:
+    container_name: synapsebot 
+    image: synapsebot/synapsebot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./conf:/home/synapseb/conf
+      - ./conf/strategy:/home/synapse/strategy
+      - ./conf/controllers:/home/synapsebot/conf/controllers
+      - ./conf/scripts:/home/synapsebot/conf/scripts
+      - ./data:/home/synapsebot/data
+      - ./controllers:/home/synapsebot/controllers
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    tty: true
+    stdin_open: true
+    network_mode: host
+    image: synapsetradeorg/synapsetrade:stable
+    # image: synapsetradeorg/synapsetrade:develop
+    # Use plotting image
+    # image: synapsetradeorg/synapsetrade:develop_plot
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    # Build step - only needed when additional dependencies are needed
+    # build:
+    #   context: .
+    #   dockerfile: "./docker/Dockerfile.custom"
+    restart: unless-stopped
+    container_name: synapsetrade
+    volumes:
+      - "./user_data:/synapsetrade/user_data"
+    ports:
+      - "127.0.0.1:8080:8080"
