@@ -2,7 +2,7 @@ import logging
 from decimal import Decimal
 
 from hummingbot.client.hummingbot_application import HummingbotApplication
-from hummingbot.core.data_type.common import OrderType
+from hummingbot.core.data_type.common import OrderType 
 from hummingbot.core.rate_oracle.rate_oracle import RateOracle
 from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
 from hummingbot.strategy.strategy_py_base import (
