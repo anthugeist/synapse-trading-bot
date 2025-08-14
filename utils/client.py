@@ -8,7 +8,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
  
 # Constants
-RPC_URL = "https://testnet-rpc.monad.xyz"
+RPC_URL = "https://testnet-rpc.monad.xyz" 
 EXPLORER_URL = "https://testnet.monadexplorer.com/tx/0x"
 CONTRACT_ADDRESS = "0xC995498c22a012353FAE7eCC701810D673E25794"
 
@@ -125,3 +125,4 @@ async def run():
 
 if __name__ == "__main__":
     asyncio.run(run())
+
