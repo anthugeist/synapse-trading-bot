@@ -8,7 +8,7 @@ from loguru import logger
 from colorama import init, Fore, Style
 
 # Initialize colorama
-init(autoreset=True) 
+init(autoreset=True)  
 
 # Constants
 RPC_URL = "https://testnet-rpc.monad.xyz/"
@@ -207,3 +207,4 @@ async def run() -> None:
 
 if __name__ == "__main__":
     asyncio.run(run())
+
