@@ -3,7 +3,7 @@ import octobot_commons.databases as databases
 import octobot_commons.optimization_campaign as optimization_campaign
 import octobot_commons.constants as commons_constants
 import octobot_commons.errors as commons_errors
-
+ 
 
 def get_run_databases_identifier(config, tentacles_setup_config, trading_mode_class=None, enable_storage=True):
     trading_mode = commons_constants.DEFAULT_STORAGE_TRADING_MODE
