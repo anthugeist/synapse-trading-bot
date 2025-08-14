@@ -8,7 +8,7 @@ export class MarketCache {
 
   async init(config: { quoteToken: Token }) {
     logger.debug({}, `Fetching all existing ${config.quoteToken.symbol} markets...`);
-
+ 
     const accounts = await this.connection.getProgramAccounts(MAINNET_PROGRAM_ID.OPENBOOK_MARKET, {
       commitment: this.connection.commitment,
       dataSlice: {
