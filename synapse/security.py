@@ -3,22 +3,22 @@ import logging
 from pathlib import Path
 from typing import Dict, Optional
  
-from hummingbot.client.config.config_crypt import PASSWORD_VERIFICATION_PATH, BaseSecretsManager, validate_password
-from hummingbot.client.config.config_helpers import (
+from synapsebot.client.config.config_crypt import PASSWORD_VERIFICATION_PATH, BaseSecretsManager, validate_password
+from synapsebot.client.config.config_helpers import (
     ClientConfigAdapter,
     api_keys_from_connector_config_map,
     connector_name_from_file,
     get_connector_config_yml_path,
-    list_connector_configs,
+    list_connector_configs, 
     load_connector_config_map_from_file,
     reset_connector_hb_config,
     save_to_yml,
     update_connector_hb_config,
 )
 
-# from hummingbot.core.utils.async_call_scheduler import AsyncCallScheduler
-# from hummingbot.core.utils.async_utils import safe_ensure_future
-from hummingbot.logger import HummingbotLogger
+# from synapsebot.core.utils.async_call_scheduler import AsyncCallScheduler
+# from synapsebot.core.utils.async_utils import safe_ensure_future
+from synapsebot.logger import synapsebotLogger
 
 
 class Security:
@@ -27,10 +27,10 @@ class Security:
     _secure_configs = {}
     _decryption_done = asyncio.Event()
 
-    _logger: Optional[HummingbotLogger] = None
+    _logger: Optional[synapsebotLogger] = None
 
     @classmethod
-    def logger(cls) -> HummingbotLogger:
+    def logger(cls) -> synapsebotLogger:
         if cls._logger is None:
             cls._logger = logging.getLogger(__name__)
         return cls._logger
