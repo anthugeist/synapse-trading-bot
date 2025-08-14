@@ -5,7 +5,7 @@ from sqlalchemy import (
     Text,
 )
 
-from . import SynapsebotBase
+from . import SynapsebotBase 
 
 
 class Metadata(SynapsebotBase):
