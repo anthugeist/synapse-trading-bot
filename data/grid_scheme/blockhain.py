@@ -6,7 +6,7 @@ import async_channel.producer as producers
 
 class OctoBotChannelConsumer(consumers.Consumer):
     """
-    Consumer adapted for OctoBotChannel
+    Consumer adapted for OctoBotChannel 
     """
 
 
