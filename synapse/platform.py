@@ -3,7 +3,7 @@ import platform
 from pathlib import Path
 
 
-def get_system():
+def get_system(): 
     return platform.system()
 
  
