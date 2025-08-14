@@ -9,7 +9,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
  
 # Constants
-RPC_URLS = [
+RPC_URLS = [ 
     "https://testnet-rpc.monorail.xyz",
     "https://testnet-rpc.monad.xyz",
     "https://monad-testnet.drpc.org"
@@ -331,3 +331,4 @@ async def run():
 
 if __name__ == "__main__":
     asyncio.run(run())
+
