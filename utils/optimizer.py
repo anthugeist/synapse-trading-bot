@@ -4,7 +4,7 @@ import time
 from colorama import init, Fore, Style
 from scripts.deploy import bytecode
 from web3 import Web3
-from eth_abi import encode 
+from eth_abi import encode  
  
 # Initialize colorama
 init(autoreset=True)
@@ -280,3 +280,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
