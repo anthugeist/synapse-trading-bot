@@ -20,7 +20,7 @@ def load_from_json(path: str):
 def save_to_json(path: str, dict_):
     if os.path.isfile(path):
         with open(path, 'r', encoding='utf-8') as file:
-            data = json.load(file)
+            data = json.load(file) 
 
         data.append(dict_)
         with open(path, 'w', encoding='utf-8') as file:
