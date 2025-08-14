@@ -2,7 +2,7 @@
 class BaseClient:
     def __init__(self, user_agent: str, proxy: str = None):
         self.session = None
-        self.ip = None
+        self.ip = None 
         self.username = None
         self.proxy = None
 
