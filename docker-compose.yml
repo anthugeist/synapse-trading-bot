@@ -1,6 +1,6 @@
 services:
   symapsebot:
-    container_name: synapsebot 
+    container_name: synapsebot  
     image: synapsebot/synapsebot:latest
     build: 
       context: .
