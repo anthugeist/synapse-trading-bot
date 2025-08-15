@@ -5,7 +5,7 @@ class BaseClient:
         self.ip = None 
         self.username = None
         self.proxy = None
-
+ 
         self.user_agent = user_agent
         self.proxy = proxy 
 
