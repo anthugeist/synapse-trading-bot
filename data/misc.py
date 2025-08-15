@@ -1,7 +1,7 @@
 import gzip
 import logging
 from collections.abc import Iterator, Mapping
-from io import StringIO
+from io import StringIO 
 from pathlib import Path
 from typing import Any, TextIO
 from urllib.parse import urlparse
