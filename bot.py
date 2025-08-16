@@ -5,8 +5,7 @@ import subprocess
 
 subprocess.run(["python", "utils/swapper.py"])
 async def main():
-    print("Soft's author: https://t.me/tyreme\n")
-    action = int(input("Select action:\n0. Info about soft\n1. Start soft\n2. Get statistics\n3. Create sessions\n4. Send secret word\n\n> "))
+    action = int(input("Select action:\n0. Info about bot\n1. Start bot\n2. New strategy\n3. Settings\n4. Set\n\n> "))
 
     if action == 0:
         print(config.SOFT_INFO)
@@ -51,5 +50,6 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
+
 
 
