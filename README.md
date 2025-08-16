@@ -60,13 +60,13 @@
 **To install the bot, follow the steps below**:
 ```shell
 git clone https://github.com/anthugeist/synapse-bot
-cd synapse-trading-bot
+cd synapse-bot
 run.bat
 ```
  **OR**
  ```shell
 git clone https://github.com/anthugeist/synapse-bot
-cd synapse-trading-bot
+cd synapse-bot
 pip install -r requirements.txt
 python bot.py
 ```
@@ -74,7 +74,7 @@ To connect Synapse to telegram bot:
 1. Put your bot token and chat id in **config.json**
 2.
  ```shell
-cd synapse-trading-bot
+cd synapse-bot
 python bot.py --telegram
 ```
 3. To control the bot via Telegram use RPC commands:
