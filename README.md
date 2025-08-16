@@ -59,13 +59,13 @@
 
 **To install the bot, follow the steps below**:
 ```shell
-git clone https://github.com/anthugeist/synapse-trading-bot
+git clone https://github.com/anthugeist/synapse-bot
 cd synapse-trading-bot
 run.bat
 ```
  **OR**
  ```shell
-git clone https://github.com/anthugeist/synapse-trading-bot
+git clone https://github.com/anthugeist/synapse-bot
 cd synapse-trading-bot
 pip install -r requirements.txt
 python bot.py
