@@ -1,5 +1,5 @@
 # Synapse trading bot🌀
-[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/+pB6j65Kv7cdjZmU0)
+![version](https://img.shields.io/badge/version-0.12.6-blue) ![coverage](https://img.shields.io/badge/coverage-75%25-yellowgreen)
 
 <img width="484" height="118" alt="image" src="https://github.com/user-attachments/assets/87a4f93a-1d8d-4aba-86f6-6a2ce2b18ebf" />
 
@@ -102,7 +102,9 @@ Use the bot at your own risk. I assume for responsibility of your trading result
 
 # Support
 
-***Help/bug reports***
+***Support/bug reports***
+
+[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/+pB6j65Kv7cdjZmU0)
 
 If you have any difficulties or encountered bugs, please join our telegram [community](https://t.me/+9j5RcKMfT5s4M2Q0)
 
