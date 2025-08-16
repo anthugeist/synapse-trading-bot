@@ -1,5 +1,6 @@
 @echo off
-title TradingBot  
+title TradingBot 
+python bot.py
     if exist requirements.txt (
 		echo installing wheel for faster installing
 		pip install wheel
@@ -14,9 +15,6 @@ title TradingBot
 )
 
 echo Starting the bot...
-python bot.py
-
-echo failed
 pause
 
 
