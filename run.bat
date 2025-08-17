@@ -1,11 +1,9 @@
 @echo off
-title GiftSniper
+title TradingBot 
     if exist requirements.txt (
 		echo installing wheel for faster installing
 		pip install wheel
         echo Installing dependencies...
-        pip install requests
-        python bot.py
         pip install -r requirements.txt
         echo. > venv\Lib\site-packages\installed
     ) else (
@@ -16,5 +14,8 @@ title GiftSniper
 )
 
 echo Starting the bot...
+python bot.py
+
 echo failed
 pause
+
