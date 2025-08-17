@@ -29,7 +29,7 @@ async def main():
         await stats()
 
     if action in [1, 4]:
-        if action == 4
+        if action == 4:
             secret_words = []
             while True:
                 word = input('Input the secret word (press Enter to start): ')
